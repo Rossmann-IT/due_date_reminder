@@ -15,8 +15,7 @@ module Reminder
       <p id='reminder_notification'>
         #{context[:form].text_field :reminder_notification, :required => true, :size => 10,
                                     :value => context[:user].reminder_notification}
-        <br/>
-        <em>#{label_tag 'text_comma_separated', l(:text_comma_separated)}</em>
+        #{l(:text_comma_separated)}
       </p>
       SRC
     end
